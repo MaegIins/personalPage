@@ -1,54 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tristan Belmont</title>
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<canvas id="bg"></canvas>
-<div id="Cv">
-    <h1>Tristan Belmont</h1>
-    <h2>Full Stack Developer</h2>
-    <!-- CONTACTS -->
-    <div id="contacts">
-        <div class="icon">
-            <a href="https://github.com/MaegIins">
-                <i class="fa-brands fa-github"></i>
-            </a>
+    <canvas id="bg" class="fixed top-0 left-0 w-full h-full"></canvas>
+    <div class="w-full h-full absolute top-0 left-0 z-20">
+        <div class="w-full mt-10 flex items-center justify-center flex-col text-white font-[Phudu]">
+            <h1 class="font-bold text-6xl">Tristan Belmont</h1>
+            <h2 class="text-4xl">Developpeur web front-end</h2>
         </div>
-        <div class="icon">
-            <a href="discordapp.com/users/282865943254925313">
-                <i class="fa-brands fa-discord"></i>
-            </a>
+        <!-- CONTACTS -->
+        <div class="flex items-center justify-center mt-5 space-x-5">
+            <button onclick="window.open('https://github.com/MaegIins','_blank')" aria-label="GitHub"
+                class="flex items-center justify-center w-20 h-20 rounded-full bg-white/10 hover:bg-white transition-colors duration-200 group focus:outline-none">
+                <i class="fa-brands fa-github text-white text-5xl group-hover:text-[#9cc2ff] cursor-pointer"></i>
+            </button>
+            <button onclick="window.open('https://discordapp.com/users/282865943254925313','_blank')" aria-label="Discord"
+                class="flex items-center justify-center w-20 h-20 rounded-full bg-white/10 hover:bg-white transition-colors duration-200 group focus:outline-none">
+                <i class="fa-brands fa-discord text-white text-5xl group-hover:text-[#9cc2ff] cursor-pointer"></i>
+            </button>
+            <button onclick="window.open('https://www.linkedin.com/in/tristan-belmont-63b8871b9/','_blank')" aria-label="LinkedIn"
+                class="flex items-center justify-center w-20 h-20 rounded-full bg-white/10 hover:bg-white transition-colors duration-200 group focus:outline-none">
+                <i class="fa-brands fa-linkedin text-white text-5xl group-hover:text-[#9cc2ff] cursor-pointer"></i>
+            </button>
+            <button onclick="window.open('https://twitter.com/maeglinss','_blank')" aria-label="Twitter"
+                class="flex items-center justify-center w-20 h-20 rounded-full bg-white/10 hover:bg-white transition-colors duration-200 group focus:outline-none">
+                <i class="fa-brands fa-twitter text-white text-5xl group-hover:text-[#9cc2ff] cursor-pointer"></i>
+            </button>
+        </div>
+        <div class="flex items-center mt-10 space-x-5 mb-5">
+            <div
+                class="w-4/5 mx-auto mt-10 p-8 rounded-full bg-white/50 flex flex-col items-center text-center backdrop-blur-md margin">
+                <h3 class="text-2xl font-bold text-[#084c61] mb-2">Qui suis-je?</h3>
+                <p class="text-[#084c61]">
+                    Développeur web expérimenté et passionné, je mobilise mes compétences techniques en React, Vue.js,
+                    Laravel et bien d’autres technologies pour créer des solutions numériques innovantes et sur mesure.
+                    Diplômé en informatique et spécialisé en développement web, je m’efforce d’allier performance,
+                    esthétique et fonctionnalité pour répondre aux besoins des entreprises.
 
-        </div>
-        <div class="icon">
-            <a href="https://www.linkedin.com/in/tristan-belmont-63b8871b9/">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-        </div>
-        <div class="icon">
-            <a href="https://twitter.com/maeglinss">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-        </div>
-    </div>
-    <!-- ABOUT ME -->
-    <div id="aboutMe">
-        <h3>About me</h3>
-        <p>
-            
-        </p>
-</div>
+                    En parallèle, mon univers personnel est animé par une passion pour le cinéma et les arts visuels.
+                    Dessin, peinture, linogravure, écriture ou guitare : ces pratiques artistiques me permettent
+                    d’explorer ma créativité sous toutes ses formes. Le cinéma, en particulier, nourrit mon imaginaire
+                    et influence ma manière d’aborder des projets en mêlant narration, émotion et technicité.
 
+                </p>
+            </div>
+            <div
+                class="w-4/5 mx-auto mt-10 p-8 rounded-full bg-white/50 flex flex-col items-center text-center backdrop-blur-md margin">
+                <h3 class="text-2xl font-bold text-[#084c61] mb-2">Mes diplômes</h3>
+                <p class="text-[#084c61]">
+                    DUT Informatique | IUT Nancy Charlemagne<br>
+                    Date d'obtention : Juin 2022<br><br>
+                    Licence Professionnelle CIASIE | IUT Nancy Charlemagne<br>
+                    Date d'obtention : Septembre 2023
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center mt-10 space-x-5 mb-5">
+            <div
+                class="w-4/5 mx-auto mt-10 p-8 rounded-full bg-white/50 flex flex-col items-center text-center backdrop-blur-md margin">
+                <h3 class="text-2xl font-bold text-[#084c61] mb-2">Mes experiences</h3>
+                <p class="text-[#084c61]">
+                2022 : Stage développement informatique chez Sobotram (Châlon-sur-Saône) – 10 semaines<br>
+                2023 : Stage développement web chez APITECH (Nancy) – 12 semaines<br>
+                2023-2025 : CDI chez APITECH en tant que développeur web
 
-<script type="module" src="./main.js"></script>
+                </p>
+            </div>
+            <div
+                class="w-4/5 mx-auto mt-10 p-8 rounded-full bg-white/50 flex flex-col items-center text-center backdrop-blur-md margin">
+                <h3 class="text-2xl font-bold text-[#084c61] mb-2">Mes diplômes</h3>
+                <p class="text-[#084c61]">
+                   
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="h-[6165464px]"></div> -->
+
+        <script type="module" src="./main.js"></script>
 </body>
+
 </html>
