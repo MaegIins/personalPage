@@ -252,12 +252,12 @@ function random(min, max) {
 animate();
 
 
-// add a random margin on elements with class "margin"
-const margins = document.querySelectorAll(".margin");
-margins.forEach((margin) => {
-  const randomMarginTop = random(0, 200);
-    const randomMarginBottom = random(0, 200);
-    const randomMarginLeft = random(0, 200);
-    const randomMarginRight = random(0, 200);
-  margin.style.margin = `${randomMarginTop}px ${randomMarginRight}px ${randomMarginBottom}px ${randomMarginLeft}px`;
-});
+// // add a random margin on elements with class "margin"
+// const margins = document.querySelectorAll(".margin");
+// margins.forEach((margin) => {
+//   const randomMarginTop = random(0, 200);
+//     const randomMarginBottom = random(0, 200);
+//     const randomMarginLeft = random(0, 200);
+//     const randomMarginRight = random(0, 200);
+//   margin.style.margin = `${randomMarginTop}px ${randomMarginRight}px ${randomMarginBottom}px ${randomMarginLeft}px`;
+// });
